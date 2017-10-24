@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Portal</title>
+    <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="custom.css">
+    <script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-toggleable navbar-inverse bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsupportedcontent"
+            aria-controls="navbarsupportedcontent" arai-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+    <a class="navbar-brand " href="#">Road-SideAssistance</a>
+
+    <div class="collapse navbar-collapse" id="navbarsupportedcontent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="menu" data-toggle="dropdown" arai-haspopup="true" arai-expanded="false">Register</a>
+                <div class="dropdown-menu" arai-labeledby="menu">
+                    <a class="dropdown-item" href="index2.html">Member</a>
+                    <a class="dropdown-item" href="index3.html">Partner</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="service" data-toggle="dropdown" arai-haspopup="true" arai-expanded="false">Services</a>
+                <div class="dropdown-menu" arai-labeledby="menu">
+                    <a class="dropdown-item" href="#">Mechnical Fault</a>
+                    <a class="dropdown-item" href="#">Fuel Delivery</a>
+                    <a class="dropdown-item" href="#">Reserve Parking</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="col"><h2 class="text-center">Invalid Email or Password.<br/>Login Portal</h2></div>
+</div>
+
+<div id="login-box">
+    <div class="left">
+        <h1> Sign Up</h1>
+        <form action="LoginServlet" method="post">
+            <input type="text" name="email" placeholder="E-mail">
+            <input type="password" name="password" placeholder="Password">
+            <p align="center"><input type="submit" name="signup_submit" value="Sign me up"></p>
+        </form>
+    </div>
+    <div class="right">
+        <span class="loginwith">Sign in with <br> Social Network</span>
+        <button class="social-signin facebook">Log in with Facebook</button>
+        <button class="social-signin twitter">Log in with Twitter</button>
+        <button class="social-signin google">Log in with Google</button>
+    </div>
+    <div class="or">OR</div>
+</div>
+
+</body>
+</html>
